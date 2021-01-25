@@ -5,7 +5,7 @@ this.conn.SetDeadline(time.Now().Add(60 * time.Second))
     if err != nil {
         return
     }
-    authcode, err := ioutil.ReadFile("FILENAME.txt")
+    authcode, err := ioutil.ReadFile("code.txt")
     if err != nil {
         return
     }
